@@ -1,0 +1,23 @@
+{
+  "name": "@yangljjs/monorepotest",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm --filter=@yangljjs/* run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "father-build": "^1.22.5",
+    "rollup": "^3.21.6",
+    "@yangljjs/menorepo2":"workspace:*"
+  }
+}
