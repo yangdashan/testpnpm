@@ -1,7 +1,7 @@
-import pkg2 from '@yangljjs/menorepo2';
+import { myFunction } from '@yangljjs/menorepo2';
 
 function fun2() {
-  pkg2();
+  myFunction();
   console.log('I am package 1');
 }
 
