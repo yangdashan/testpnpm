@@ -1,7 +1,7 @@
 {
-  "name": "@yangljjs/menorepo1",
+  "name": "@yangljjs/menorepo3",
   "version": "1.0.3",
-  "description": "pkg1",
+  "description": "pkg3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@yangljjs/menorepo2": "workspace:*",
+    "@yangljjs/menorepo1": "workspace:*",
     "axios": "^1.4.0"
   },
   "devDependencies": {

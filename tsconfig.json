@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["*"],
+        "@@/*": [".fishx/*"],
+        "test-utils": ["test/lib/testUtils"],
+        "fishx": ["./packages/fishx"],
+        "@fishx/utils": ["./packages/utils"],
+        // "@fishx/renderer-react": ["./packages/renderer-react"]
+      }
+    }
+  }
+  

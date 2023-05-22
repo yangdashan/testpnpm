@@ -1,0 +1,8 @@
+{
+  "name": "react-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "react-scripts": "bin/react-scripts.js"
+  }
+}

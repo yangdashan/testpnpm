@@ -1,11 +1,17 @@
 {
   "name": "@yangljjs/menorepo2",
-  "version": "1.0.0",
+  "version": "3.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "compiled"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "father-build"
+    "build": "father build",
+    "build:deps": "react-scripts bundleDeps",
+    "dev": "react-scripts father dev"
   },
   "devDependencies": {
     "father-build": "^1.22.5",

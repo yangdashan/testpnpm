@@ -5,19 +5,43 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-changeset": "pnpm --filter=@yangljjs/* run build",
+    "reloadlog": "node scripts/log/loadmultipkglog.js",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.org/",
+    "commit": "cz",
+    "postinstall": "husky install",
     "preinstall": "npx only-allow pnpm",
     "build": "pnpm --filter=@yangljjs/* run build"
   },
   "author": "",
   "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "dependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.1.4",
-    "father-build": "^1.22.5",
-    "rollup": "^3.21.6",
-    "@yangljjs/menorepo2":"workspace:*"
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "father": "^4.1.5",
+    "husky": "^8.0.3",
+    "moment": "^2.29.4",
+    "node-fetch": "^3.3.1",
+    "prettier": "^2.8.4",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "react-scripts": "^5.0.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.9.4"
   }
 }
